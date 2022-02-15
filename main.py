@@ -9,8 +9,7 @@ class Bot(commands.Bot):
   def __init__(self):
     super().__init__(
       command_prefix = commands.when_mentioned_or(
-        "a", 
-        "A"
+        "!"
       ), 
       intents = intents, 
       strip_after_prefix = True, 
